@@ -17,7 +17,7 @@ require __DIR__.'/../vendor/autoload.php';
 //     ->handleRequest(Request::capture());
 $app = require_once __DIR__.'/../bootstrap/app.php';
 
-$kernel = $app->make($kernel::class);
+$kernel = $app->make(Illuminate\Contracts\Console\Kernel::class);
 
 $response = $kernel->handle(
     $request = Request::capture()
