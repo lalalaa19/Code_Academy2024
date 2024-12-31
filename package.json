@@ -2,9 +2,8 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "build": "vite build && NODE_ENV=production npx tailwindcss -i ./resources/css/app.css -o ./public/css/app.css --minify",
-        "dev": "vite",
-        "tailwind-dev": "npx tailwindcss -i ./resources/css/app.css -o ./public/css/app.css --watch"
+        "build": "vite build",
+        "dev": "vite"
     },
     "devDependencies": {
         "autoprefixer": "^10.4.20",
